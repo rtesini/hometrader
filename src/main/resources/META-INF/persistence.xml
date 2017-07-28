@@ -1,0 +1,27 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+             version="1.0">
+  	<!-- <persistence-unit name="xmtest">
+  		<jta-data-source>java:/XpressMoneyDS</jta-data-source>
+  		<jar-file>xpress-money-1.0-SNAPSHOT.jar</jar-file>
+
+		<properties>
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+	      	<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
+	    </properties>
+
+  </persistence-unit> -->
+
+	<persistence-unit name="xm_dbase">
+	    <properties>
+	      <property name="javax.persistence.jdbc.user" value="xm" />
+			<property name="javax.persistence.jdbc.password" value="xm123" />
+	      <property name="hibernate.show_sql" value="true" />
+	      <property name="hibernate.hbm2ddl.auto" value="update" />
+	      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
+	    </properties>
+	  </persistence-unit>
+</persistence>
