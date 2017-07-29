@@ -1,63 +1,72 @@
 <div [@routerTransition]>
-    <h2 class="text-muted">Dashboard <small>Statistics Overview</small></h2>
+    <h2 class="text-muted header-negociacao">Negocia&ccedil;&atilde;o</h2>
     <div class="row">
-        <div class="col-md-12">
-            <ngb-carousel>
-                <ng-template ngbSlide *ngFor="let slider of sliders">
-                    <img class="img-fluid mx-auto d-block" [src]="slider.imagePath" alt="Random first slide" width="100%">
-                    <div class="carousel-caption">
-                        <h3>{{slider.label}}</h3>
-                        <p>{{slider.text}}</p>
-                    </div>
-                </ng-template>
-            </ngb-carousel>
+        <div class="col-md-4 col-xs-12">
+            <H3>Vendedor</H3>
+            <div class="negotiation-user">
+                <img src="assets/images/avatar.png"/>
+                <div class="user-deatils">
+                    <h4>NOME1</h4>
+                    <a href="tel:+393484611091">
+                        <i class="fa fa-phone"></i>
+                        + 39 348 461 10 91
+                    </a>
+                    <a href="mailto:contato@italianando.com.br">
+                        <i class="fa fa-paper-plane-o"></i>
+                            contato@italianando.com.br
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-12">
+            <H3>Comprador</H3>
+            <div class="negotiation-user">
+                <img src="assets/images/avatar.png"/>
+                <div class="user-deatils">
+                    <h4>NOME1</h4>
+                    <a href="tel:+393484611091">
+                        <i class="fa fa-phone"></i>
+                        + 39 348 461 10 91
+                    </a>
+                    <a href="mailto:contato@italianando.com.br">
+                        <i class="fa fa-paper-plane-o"></i>
+                            contato@italianando.com.br
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-12">
+            <H3>Corretor</H3>
+            <div class="negotiation-user">
+                <img src="assets/images/avatar.png"/>
+                <div class="user-deatils">
+                    <h4>NOME1</h4>
+                    <a href="tel:+393484611091">
+                        <i class="fa fa-phone"></i>
+                        + 39 348 461 10 91
+                    </a>
+                    <a href="mailto:contato@italianando.com.br">
+                        <i class="fa fa-paper-plane-o"></i>
+                            contato@italianando.com.br
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <hr>
     <div class="row">
         <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'card-primary'" [icon]="'fa-comments'" [count]="26" [label]="'New Comments!'" ></app-stat>
+            <app-stat [bgClass]="'card-primary'" [icon]="'fa-comments'" [count]="2" [label]="''" ></app-stat>
         </div>
         <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'card-info'" [icon]="'fa-tasks'" [count]="12" [label]="'New task!'" ></app-stat>
+            <app-stat [bgClass]="'card-info'" [icon]="'fa-tasks'" [count]="12" [label]="'Tarefas'" ></app-stat>
         </div>
         <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'card-success'" [icon]="'fa-shopping-cart'" [count]="124" [label]="'New Orders!'" ></app-stat>
+            <app-stat [bgClass]="'card-success'" [icon]="'fa-file'" [count]="124" [label]="'Documentos'" ></app-stat>
         </div>
         <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'card-danger'" [icon]="'fa-support'" [count]="13" [label]="'New Tickets!'"></app-stat>
+            <app-stat [bgClass]="'card-danger'" [icon]="'fa-question'" [count]="13" [label]="'Ajuda'"></app-stat>
         </div>
     </div>
-    <hr />
-    <ngb-alert [type]="alert.type" (close)="closeAlert(alert)" *ngFor="let alert of alerts">{{ alert.message }}</ngb-alert>
-    <hr />
-    <div class="row">
-        <div class="col-lg-8">
-            <div class="card card-default">
-                <div class="card-header">
-                    <i class="fa fa-clock-o fa-fw"></i> Responsive Timeline
-                </div>
-                <!-- /.card-header -->
-                <app-timeline></app-timeline>
-                <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-        </div>
-        <!-- /.col-lg-8 -->
-        <div class="col-lg-4">
-            <div class="card card-default">
-                <div class="card-header">
-                    <i class="fa fa-bell fa-fw"></i> Notifications card
-                </div>
-                <!-- /.card-header -->
-                <app-notification></app-notification>
-                <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-
-            <app-chat></app-chat>
-            <!-- /.card .chat-card -->
-        </div>
-        <!-- /.col-lg-4 -->
-    </div>
+    
 </div>
