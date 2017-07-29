@@ -227,6 +227,7 @@
 		                        <jvmFlag>-Xnoagent</jvmFlag>
 		                        <jvmFlag>-Xrunjdwp:transport=dt_socket,address=4001,suspend=n,server=y
 		                        </jvmFlag>
+		                        <jvmFlag>-Ddev=true</jvmFlag>
 		                        <!-- change this if you want hdr to simulate eventual consistency -->
 		                        <jvmFlag>-Ddatastore.default_high_rep_job_policy_unapplied_job_pct=0</jvmFlag>
 		                    </jvmFlags>
@@ -289,6 +290,7 @@
 		                        <jvmFlag>-Xnoagent</jvmFlag>
 		                        <jvmFlag>-Xrunjdwp:transport=dt_socket,address=4001,suspend=n,server=y
 		                        </jvmFlag>
+								<jvmFlag>-Ddev=true</jvmFlag>
 		                        <!-- change this if you want hdr to simulate eventual consistency -->
 		                        <jvmFlag>-Ddatastore.default_high_rep_job_policy_unapplied_job_pct=0</jvmFlag>
 		                    </jvmFlags>
@@ -351,6 +353,7 @@
 		                        <jvmFlag>-Xnoagent</jvmFlag>
 		                        <jvmFlag>-Xrunjdwp:transport=dt_socket,address=4001,suspend=n,server=y
 		                        </jvmFlag>
+		                        <jvmFlag>-Ddev=true</jvmFlag>
 		                        <!-- change this if you want hdr to simulate eventual consistency -->
 		                        <jvmFlag>-Ddatastore.default_high_rep_job_policy_unapplied_job_pct=0</jvmFlag>
 		                    </jvmFlags>
