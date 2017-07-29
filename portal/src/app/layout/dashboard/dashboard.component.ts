@@ -15,7 +15,6 @@ export class DashboardComponent implements OnInit {
     }
 
     tst() {
-    alert('1111');
-        
+        alert('1111');
     }
 }
