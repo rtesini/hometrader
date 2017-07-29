@@ -1,10 +1,10 @@
-.card .task-pendent {
+.card .task-pendent, .card.task-pendent {
 	background-color: #f7f266;
 }
-.card .task-canceled {
+.card .task-canceled, .card.task-canceled {
 	background-color: #fba0a0;
 }
-.card .task-done {
+.card .task-done, .card.task-done {
 	background-color: #4dda6b;
 }
 
@@ -28,4 +28,13 @@
 }
 .div-more-info {
 	text-align: right;
+}
+.row-more-info {
+	margin-top:20px;
+	padding: 1.25rem;
+}
+
+.row-more-info .fa-times{
+    float: right;
+    cursor: pointer;
 }

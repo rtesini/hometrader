@@ -7,7 +7,7 @@
                 <h3 class="card-title">Levar Documentacao</h3>
                 <p class="card-text">Levar documentacao para cartorio</p>
                 <div class="div-more-info">
-                    <span class="btn btn-primary more-info">+</span>
+                    <span class="btn btn-primary more-info" (click)="moreInfo('pendent', 'Levar Documentacao')">+</span>
                 </div>
             </div>
         </div>
@@ -19,7 +19,7 @@
             <h3 class="card-title">Ver a casa</h3>
             <p class="card-text">Visitar a casa.</p>
             <div class="div-more-info">
-                <span class="btn btn-primary more-info">+</span>
+                <span class="btn btn-primary more-info" (click)="moreInfo('done', 'Ver a casa')">+</span>
             </div>
         </div>
     </div>
@@ -31,9 +31,14 @@
             <h3 class="card-title">Consultar pedreiro</h3>
             <p class="card-text">Levar um pedreiro para ver estrutura da casa.</p>
             <div class="div-more-info">
-                <span class="btn btn-primary more-info">+</span>
+                <span class="btn btn-primary more-info" (click)="moreInfo('canceled', 'Consultar pedreiro')">+</span>
             </div>
         </div>
     </div>
   </div>
 </div>
+<div [hidden]="!showInfo" class="row-more-info card task-{{info.status}}">
+    <h3 class="card-title">Informacoes da Tarefa <i class="fa fa-times" (click)="closeInfo()"></i></h3>
+    <p class="card-title">Nome: {{info.name}}</p>
+    <p class="card-title">Status: {{info.status}}</p>
+</div>    

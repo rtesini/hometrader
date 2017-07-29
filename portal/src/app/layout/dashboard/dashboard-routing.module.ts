@@ -8,7 +8,8 @@ import { TasksComponent } from './components/tasks/tasks.component';
 const routes: Routes = [
     { path: '', component: DashboardComponent },
     { path: 'documents', component: DocumentsComponent},
-    { path: 'help', component: HelpComponent}
+    { path: 'help', component: HelpComponent},
+    { path: 'tasks', component: TasksComponent}
 ];
 
 @NgModule({
