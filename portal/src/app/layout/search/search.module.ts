@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FormRoutingModule } from './form-routing.module';
-import { FormComponent } from './form.component';
+import { SearchRoutingModule } from './search-routing.module';
+import { SearchComponent } from './search.component';
 import { PageHeaderModule } from './../../shared';
 
 @NgModule({
     imports: [
         CommonModule,
-        FormRoutingModule,
+        SearchRoutingModule,
         PageHeaderModule
     ],
-    declarations: [FormComponent]
+    declarations: [SearchComponent]
 })
-export class FormModule { }
+export class SearchModule { }
