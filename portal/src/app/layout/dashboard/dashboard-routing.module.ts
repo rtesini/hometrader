@@ -7,8 +7,7 @@ import { HelpComponent } from './components/help/help.component';
 const routes: Routes = [
     { path: '', component: DashboardComponent },
     { path: 'documents', component: DocumentsComponent},
-    { path: 'help', component: HelpComponent},
-    { path: 'tasks', component: TasksComponent},
+    { path: 'help', component: HelpComponent}
 ];
 
 @NgModule({
