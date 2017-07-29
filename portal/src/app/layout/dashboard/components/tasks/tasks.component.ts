@@ -24,4 +24,8 @@ export class TasksComponent implements OnInit {
     	};
     	this.showInfo = true;
     }
+
+    closeInfo() {
+    	this.showInfo = false;
+    }
 }

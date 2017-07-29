@@ -38,7 +38,7 @@
   </div>
 </div>
 <div [hidden]="!showInfo" class="row-more-info card task-{{info.status}}">
-    <h3 class="card-title">Informacoes da Tarefa</h3>
+    <h3 class="card-title">Informacoes da Tarefa <i class="fa fa-times" (click)="closeInfo()"></i></h3>
     <p class="card-title">Nome: {{info.name}}</p>
     <p class="card-title">Status: {{info.status}}</p>
 </div>    
