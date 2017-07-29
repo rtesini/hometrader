@@ -36,4 +36,8 @@ export class HeaderComponent implements OnInit {
     changeLang(language: string) {
         this.translate.use(language);
     }
+
+    search(){
+        this.router.navigate(['/search']);
+    }
 }

@@ -67,6 +67,17 @@ $topnav-background-color: #222;
         }
     }
 }
+
 .header .navbar {
     background: $topnav-background-color !important;
+}
+
+.navbar-brand.search{
+    margin-left: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+div nav a.navbar-brand.search:hover{
+    color: white;
 }

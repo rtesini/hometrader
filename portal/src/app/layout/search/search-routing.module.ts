@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { FormComponent } from './form.component';
+import { SearchComponent } from './search.component';
 
 const routes: Routes = [
-    { path: '', component: FormComponent }
+    { path: '', component: SearchComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class FormRoutingModule { }
+export class SearchRoutingModule { }
