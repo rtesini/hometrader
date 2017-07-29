@@ -8,6 +8,7 @@ const routes: Routes = [
     { path: '', component: DashboardComponent },
     { path: 'documents', component: DocumentsComponent},
     { path: 'help', component: HelpComponent},
+    { path: 'tasks', component: TasksComponent},
 ];
 
 @NgModule({
