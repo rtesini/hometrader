@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TasksComponent implements OnInit {
     
     public showInfo = false;
-    public info = {};
+    public info = { name: '', status: ''};
 
     constructor() { 
     	console.log('hello');
