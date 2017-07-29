@@ -16,7 +16,19 @@ export class NegotiationComponent implements OnInit {
         console.log(this);
     }
 
-    tst(){
+    chat(){
+        this.router.navigate(['/dashboard/chat']);
+    }
+
+    tasks(){
+        this.router.navigate(['/dashboard/tasks']);
+    }
+
+    documents(){
         this.router.navigate(['/dashboard/documents']);
+    }
+
+    help(){
+        this.router.navigate(['/dashboard/help']);
     }
 }
