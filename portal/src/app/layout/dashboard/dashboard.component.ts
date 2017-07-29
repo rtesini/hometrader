@@ -8,6 +8,9 @@ import { routerTransition } from '../../router.animations';
     animations: [routerTransition()]
 })
 export class DashboardComponent implements OnInit {
+    public template: string;
+
+
     constructor() {
     }
 
@@ -16,5 +19,6 @@ export class DashboardComponent implements OnInit {
 
     tst() {
         alert('1111');
+        console.log(this.template);
     }
 }

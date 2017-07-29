@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-negotiation',
@@ -7,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NegotiationComponent implements OnInit {
     
-    constructor() { 
+    constructor(public router: Router){
     	console.log('hello');
     }
 
     ngOnInit() { 
+        console.log(this);
+    }
+
+    tst(){
+        this.router.navigate(['/dashboard/documents']);
     }
 }
