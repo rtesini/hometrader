@@ -1,3 +1,53 @@
 .header-documentos {
 	
 }
+
+.vendedor{
+    background-color: #9BBDF9;
+}
+
+.vendedor .file-list{
+    background-color: #b2cdfb;
+}
+
+.comprador{
+    background-color: #1CF1E1;
+}
+
+.comprador .file-list{
+    background-color: #b2faf4;
+}
+
+.row.files{
+    margin-top: 20px;
+}
+
+.file-list ul {
+  list-style-type: none;
+}
+
+.file-list ul li span{
+    margin-left: 10px;
+}
+
+.file-list ul li span.actions{
+    float: right;
+}
+
+.file-list ul li span.actions .fa{
+    cursor: pointer;
+}
+
+.file-list ul li span.actions .fa-trash-o{
+    margin-left: 5px;
+}
+
+.details-row { 
+    margin-top: 20px;
+    background-color: #C4E0F9;
+}
+
+.details-row .fa-times{
+    float: right;
+    cursor: pointer;
+}

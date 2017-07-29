@@ -7,10 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DocumentsComponent implements OnInit {
     
+    public edited = false;
+    public filename = '';
+
+
     constructor() { 
     	console.log('hello');
     }
 
     ngOnInit() { 
+    }
+
+    details(filename){
+        console.log(filename);
+        this.edited = true;
+        this.filename = filename;
+    }
+
+    close(){
+        this.edited = false;
     }
 }
