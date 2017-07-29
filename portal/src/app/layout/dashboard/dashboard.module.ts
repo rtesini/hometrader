@@ -13,7 +13,8 @@ import {
     NotificationComponent,
     ChatComponent,
     DocumentsComponent,
-    NegotiationComponent
+    NegotiationComponent,
+    HelpComponent
 } from './components';
 import { StatModule } from '../../shared';
 
@@ -31,7 +32,8 @@ import { StatModule } from '../../shared';
         NotificationComponent,
         ChatComponent,
         DocumentsComponent,
-        NegotiationComponent
+        NegotiationComponent,
+        HelpComponent
     ]
 })
 export class DashboardModule { }
