@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { DocumentsRoutingModule } from './documents-routing.module';
-import { DocumentsComponent } from './documents.component';
+import { TasksRoutingModule } from './tasks-routing.module';
+import { TasksComponent } from './tasks.component';
 
 @NgModule({
     imports: [
@@ -11,4 +11,4 @@ import { DocumentsComponent } from './documents.component';
     declarations: [
     ]
 })
-export class DocumentsModule { }
+export class TasksModule { }
