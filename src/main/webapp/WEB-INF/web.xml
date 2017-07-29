@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
  	<listener>
-	    <listener-class>br.com.confidencecambio.config.DatabaseContextListener</listener-class>
+	    <listener-class>br.com.hometrader.config.DatabaseContextListener</listener-class>
 	</listener>
 
 	<filter>
@@ -23,7 +23,6 @@
 			<param-name>javax.ws.rs.core.Application</param-name>
 			<param-value>br.com.hometrader.config.Application</param-value>
 		</init-param>
-
 	</servlet>
 
 	<servlet-mapping>

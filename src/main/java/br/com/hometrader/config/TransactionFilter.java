@@ -23,7 +23,6 @@ public class TransactionFilter implements Filter {
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		logger.info("[START] Transaction filter");
-
 		try {
 			TransactionalContext.beginTransaction();
 			chain.doFilter(request, response);

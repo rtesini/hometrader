@@ -15,10 +15,10 @@
 
   </persistence-unit> -->
 
-	<persistence-unit name="xm_dbase">
+	<persistence-unit name="hometrader_dbase">
 	    <properties>
-	      <property name="javax.persistence.jdbc.user" value="xm" />
-			<property name="javax.persistence.jdbc.password" value="xm123" />
+	      <property name="javax.persistence.jdbc.user" value="hometrader" />
+			<property name="javax.persistence.jdbc.password" value="ht123" />
 	      <property name="hibernate.show_sql" value="true" />
 	      <property name="hibernate.hbm2ddl.auto" value="update" />
 	      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>

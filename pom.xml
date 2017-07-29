@@ -10,15 +10,15 @@
 
     <properties>
     	<app.version>1</app.version>
-		<app.id>xpress-money</app.id>
+		<app.id>hometrader-175122</app.id>
 
 
-	    <INSTANCE_CONNECTION_NAME>xpress-money:us-central1:xm-db-instance</INSTANCE_CONNECTION_NAME>
+	    <INSTANCE_CONNECTION_NAME>hometrader-175122:us-central1:xm-db-instance</INSTANCE_CONNECTION_NAME>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <appengine.sdk.version>1.9.49</appengine.sdk.version>
 		<gcloud.plugin.version>2.0.9.90.v20151210</gcloud.plugin.version>
-		<cloudsql.url>jdbc:google:mysql://${INSTANCE_CONNECTION_NAME}/xm_dbase</cloudsql.url>
-    	<cloudsql.url.dev>jdbc:mysql://localhost/xm_dbase?user=root</cloudsql.url.dev>
+		<cloudsql.url>jdbc:google:mysql://${INSTANCE_CONNECTION_NAME}/hometrader_dbase</cloudsql.url>
+    	<cloudsql.url.dev>jdbc:mysql://localhost/hometrader_dbase?user=root</cloudsql.url.dev>
     </properties>
 
     <dependencies>

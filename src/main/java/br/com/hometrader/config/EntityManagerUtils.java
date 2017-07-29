@@ -9,7 +9,7 @@ import javax.persistence.Persistence;
 
 public class EntityManagerUtils {
 
-	protected static final String PERSISTENCE_UNIT = "xm_dbase";
+	protected static final String PERSISTENCE_UNIT = "hometrader_dbase";
 	private static EntityManagerFactory emf;
 
 	public static void initialize() {
