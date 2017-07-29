@@ -9,9 +9,10 @@ export class DocumentsComponent implements OnInit {
     
     public edited = false;
     public filename = '';
-    public files=[{name:'fotos.zip',vence:'false', vencimento:''},{name:'RG.pdf',vence:'true', vencimento:'22/05/2018'},
-    {name:'cpf.pdf',vence:'true', vencimento:'22/05/2018'}];
-    public selectedFile;
+    public files=[{name:'fotos.zip',vence:false, vencimento:''},
+    {name:'RG.pdf',vence:true, vencimento:'22/05/2018'},
+    {name:'cpf.pdf',vence:true, vencimento:'22/05/2018'}];
+    public selectedFile = {name:'',vence:false, vencimento:''};
 
     constructor() { 
         console.log('hello');
