@@ -7,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TasksComponent implements OnInit {
     
+    public showInfo = false;
+    public info = {};
+
     constructor() { 
     	console.log('hello');
     }
 
     ngOnInit() { 
+    }
+
+    moreInfo(status, name) {
+    	this.info = {
+    		status : status,
+    		name : name 
+    	};
+    	this.showInfo = true;
     }
 }
