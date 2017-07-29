@@ -1,3 +1,13 @@
-.header-documentos {
-	
+.card .task-pendent {
+	background-color: #f7f266;
+}
+.card .task-canceled {
+	background-color: #fba0a0;
+}
+.card .task-done {
+	background-color: #4dda6b;
+}
+
+.card {
+	min-height: 200px;
 }
